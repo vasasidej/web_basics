@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<h1>My first HTML form</h1>
+<div>
+    <form method = "get" action=”https://httpbin.org/get”>
+        <div>
+            <label for="name">name:</label>
+            <input id = "name" type = "text" name="name">
+        </div>
+        <div>
+            <label>
+                Date of birth:
+                <input type ="date" name = "birthday">
+            </label>
+            </input>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type ="email" id ="email" name ="email">
+        </div>
+        <div>
+            <label>
+                Message:
+                <textarea name="message"></textarea>
+            </label>
+        </div>
+        <div>
+            <span>Your favorite drinks:</span>
+            <label>
+                water
+                <input type = "checkbox" name = "water">
+            </label>
+            <label>
+                hot water
+                <input type = "checkbox" name = "hot water">
+            </label>
+            <label>
+                mojito
+                <input type = "checkbox" name = "mojito">
+            </label>
+            <label>
+                coca cola
+                <input type = "checkbox" name = "coca cola">
+            </label>
+        </div>
+        <div>
+            <span>My nationality:</span>
+            <label>
+                ukrain
+                <input type = "radio" name = "nationality" value = "ukt">
+            </label>
+            <label>
+                portugal
+                <input type = "radio" name = "nationality" value = "por">
+            </label>
+            <label>
+                brazil
+                <input type = "radio" name = "nationality" value = "bra">
+            </label>
+        </div>
+        <div>
+            <input type = "submit" name = send>
+            <input type = "reset" name = clear>
+        </div>
+    </form>
+</div>
+<div>
+    <picture>
+        <source media="(min-width: 1000px)" srcset="https://picsum.photos/1000/400">
+        <source media="(min-width: 300px)" srcset="https://picsum.photos/300/500">
+        <img src="https://picsum.photos/300/300?random=1">
+    </picture>
+</div>
